@@ -14,7 +14,7 @@ class FilamentKanbanBoard extends Page implements HasForms
     use InteractsWithForms, EditModalRecord, InteractsWithEditRecordModal{
         InteractsWithEditRecordModal::getForms insteadof InteractsWithForms;
     }
-    protected static string $view = 'filament-kanban-board::kanban-board';
+    protected string $view = 'filament-kanban-board::kanban-board';
     public bool $sortable = false;
     public bool $sortableBetweenStatuses = false;
     public string $kanbanBoardView = 'filament-kanban-board::kanban-header';
